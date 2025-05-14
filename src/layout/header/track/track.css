@@ -1,0 +1,28 @@
+.track-container {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 95%;
+  margin: 0 1rem 0 1rem;
+
+  font-size: 0.8rem;
+}
+
+.track-icons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 2rem;
+}
+
+.icon {
+  color: #3fa9eb;
+}
+
+.track-data {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}

@@ -1,0 +1,67 @@
+.footer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, auto);
+  grid-template-areas:
+    "contact popular customer"
+    "copy copy copy";
+  justify-content: space-between;
+  background: linear-gradient(to right, #0566a3, #00bfff);
+  padding: 1rem 3rem 0 8rem;
+  text-align: center;
+  color: #fff;
+}
+
+.footer-contact {
+  grid-area: contact;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.app-download {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 0.5rem;
+  margin-top: 0.5;
+  cursor: pointer;
+}
+
+.app-store {
+  width: 130px;
+}
+.google-play {
+  width: 120px;
+}
+
+.footer-popular {
+  grid-area: popular;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.footer-customer {
+  grid-area: customer;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.footer-bottom {
+  grid-area: copy;
+}
+
+.section-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+
+  text-decoration: underline;
+}
+
+.footer-title {
+  font-size: 2rem;
+  font-weight: bold;
+}

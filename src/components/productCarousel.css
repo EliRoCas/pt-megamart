@@ -1,0 +1,68 @@
+.slide-content {
+  width: 100%;
+  height: 350px;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(120deg, #211844 0%, #505e96 100%);
+  border-radius: 16px;
+  overflow: hidden;
+  padding: 0 2rem;
+}
+
+.product-image {
+  max-width: 45%;
+  height: 80%;
+  margin: 1rem;
+  object-fit: contain;
+  border-radius: 12px;
+  box-shadow: 0 2px 16px 0 rgba(0, 0, 0, 0.08);
+  z-index: 2;
+}
+
+.slide-text-overlay {
+  width: 55%;
+  margin: 0 2rem;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  z-index: 2;
+}
+
+.slide-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  line-height: 1.1;
+  margin: 0.5rem 0;
+  text-transform: uppercase;
+}
+
+.slide-text,
+.slide-promotion,
+.product-status {
+  font-size: 1.5rem;
+  margin: 0.5rem 0;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  background: #e4e6ecbb;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  color: #0566a3;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s, color 0.2s;
+  font-size: 18px;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  color: #0566a3;
+  font-size: 18px;
+}
