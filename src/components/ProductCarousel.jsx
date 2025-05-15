@@ -21,19 +21,19 @@ const ProductCarousel = () => {
       >
         {productsData.map((product) => (
           <SwiperSlide key={product.id}>
-            <div className="slide-content">
+            <div className="w-full h-[350px] flex flex-row-reverse items-center justify-center bg-gradient-to-r from-[#211844] to-[#505e96] rounded-[16px] overflow-hidden px-8">
               <img
                 src={product.image}
                 alt={product.name}
-                className="product-image"
+                className="max-w-[45%] h-[80%] m-4 object-contain rounded-[12px] shadow-lg z-2"
               />
-              <div className="slide-text-overlay">
-                <p className="slide-text">Best Deal Online on {product.category}</p>
-                <h2 className="slide-title">{product.name}.</h2>
+              <div className="w-[55%] mx-8 text-white flex flex-col items-start z-2">
+                <p className="text-[1.5rem] my-2 text-white">Best Deal Online on {product.category}</p>
+                <h2 className="text-[2.5rem] font-bold leading-[1.1] my-2 uppercase">{product.name}.</h2>
                 {product.discount > 0 ? (
-                  <p className="slide-promotion">Up to {product.discount}% OFF</p>
+                  <p className="text-[1.5rem] my-2">Up to {product.discount}% OFF</p>
                 ) : (
-                  <p className="product-status">New Arrival</p>
+                  <p className="text-[1.5rem] my-2">New Arrival</p>
                 )}
               </div>
             </div>

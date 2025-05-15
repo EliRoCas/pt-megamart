@@ -2,14 +2,12 @@ import PropTypes from "prop-types";
 import Header from "./header/Header";
 import Footer from "./footer/Footer";
 
-import "./layout.scss";
-
 function layout({ children }) {
   return (
-    <div className="layout">
+    <div className="grid h-screen box-border grid-rows-[auto_1fr_auto]">
       <Header />
 
-      <section className="main">
+      <section className="overflow-auto min-h-0 mx-8 flex flex-col gap-4">
         <main>{children}</main>
         <Footer />
       </section>

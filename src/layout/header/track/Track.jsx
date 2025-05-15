@@ -3,11 +3,11 @@ import "./track.css";
 
 const Track = () => {
   return (
-    <div className="track-container">
+    <div className="flex items-center justify-between w-[95%] mx-4 text-[0.8rem] box-border">
       <div className="welcome-msg text-center text-lg font-medium text-grey-500">
         <p>Welcome to worldwide Megamart!</p>
       </div>
-      <div className="track-icons">
+      <div className="flex flex-row items-center justify-evenly gap-4">
         <div className="track-data">
           <MapPin
             size={20}
