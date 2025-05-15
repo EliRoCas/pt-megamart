@@ -7,7 +7,7 @@ function layout({ children }) {
     <div className="grid h-screen box-border grid-rows-[auto_1fr_auto]">
       <Header />
 
-      <section className="overflow-auto min-h-0 mx-8 flex flex-col gap-4">
+      <section className="layout-section overflow-auto min-h-0 flex flex-col">
         <main>{children}</main>
         <Footer />
       </section>

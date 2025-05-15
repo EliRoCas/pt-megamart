@@ -1,0 +1,17 @@
+
+@media (min-width: 640px) {
+  .layout-section {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    gap: 1.5rem;
+  }
+}
+
+
+@media (min-width: 1024px) {
+  .layout-section {
+    margin-left: 4rem;
+    margin-right: 4rem;
+    gap: 2rem;
+  }
+}

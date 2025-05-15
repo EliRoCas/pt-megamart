@@ -18,22 +18,39 @@ const ProductCarousel = () => {
         pagination={{ clickable: true }}
         loop
         autoplay={{ delay: 3000, disableOnInteraction: false }}
+        breakpoints={{
+         
+          640: {
+            slidesPerView: 1,
+            spaceBetween: 20
+          },
+         
+          768: {
+            slidesPerView: 1,
+            spaceBetween: 30
+          },
+          
+          1024: {
+            slidesPerView: 1,
+            spaceBetween: 40
+          }
+        }}
       >
         {productsData.map((product) => (
           <SwiperSlide key={product.id}>
-            <div className="w-full h-[350px] flex flex-row-reverse items-center justify-center bg-gradient-to-r from-[#211844] to-[#505e96] rounded-[16px] overflow-hidden px-8">
+            <div className="product-slide">
               <img
                 src={product.image}
                 alt={product.name}
-                className="max-w-[45%] h-[80%] m-4 object-contain rounded-[12px] shadow-lg z-2"
+                className="product-image"
               />
-              <div className="w-[55%] mx-8 text-white flex flex-col items-start z-2">
-                <p className="text-[1.5rem] my-2 text-white">Best Deal Online on {product.category}</p>
-                <h2 className="text-[2.5rem] font-bold leading-[1.1] my-2 uppercase">{product.name}.</h2>
+              <div className="product-info">
+                <p className="deal-text">Best Deal Online on {product.category}</p>
+                <h2 className="product-title">{product.name}.</h2>
                 {product.discount > 0 ? (
-                  <p className="text-[1.5rem] my-2">Up to {product.discount}% OFF</p>
+                  <p className="discount-text">Up to {product.discount}% OFF</p>
                 ) : (
-                  <p className="text-[1.5rem] my-2">New Arrival</p>
+                  <p className="new-arrival">New Arrival</p>
                 )}
               </div>
             </div>
