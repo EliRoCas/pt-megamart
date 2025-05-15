@@ -1,12 +1,43 @@
-# React + Vite
+# MegaMart React App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a simple e-commerce web app built with React and Vite.
 
-Currently, two official plugins are available:
+## Requirements
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Node.js (v16+ recommended)
+- npm or yarn
 
-## Expanding the ESLint configuration
+## Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- [React](https://react.dev/)
+- [Vite](https://vitejs.dev/)
+- [Tailwind CSS](https://tailwindcss.com/) – utility-first CSS framework
+- [Phosphor Icons](https://phosphoricons.com/) – icon library
+- [Swiper.js](https://swiperjs.com/) – modern touch slider/carousel
+
+## Install
+
+```bash
+npm install
+# or
+yarn install
+```
+
+## Run the app
+
+```bash
+npm run dev
+# or
+yarn dev
+```
+
+Visit [http://localhost:5173](http://localhost:5173) in your browser.
+
+## Build for production
+
+```bash
+npm run build
+# or
+yarn build
+```
+
